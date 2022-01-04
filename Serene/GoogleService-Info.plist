@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>26665912626-7oosi1a9mfnemsblflhcikbnmp2tj01j.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.26665912626-7oosi1a9mfnemsblflhcikbnmp2tj01j</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDnjsPTrvDIUx0w9iEtZGsCyLn9dEoRu3Q</string>
+	<key>GCM_SENDER_ID</key>
+	<string>26665912626</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.saramsvi.Serene</string>
+	<key>PROJECT_ID</key>
+	<string>serene-ce240</string>
+	<key>STORAGE_BUCKET</key>
+	<string>serene-ce240.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:26665912626:ios:4c05898bd52c36f13c6f2b</string>
+</dict>
+</plist>

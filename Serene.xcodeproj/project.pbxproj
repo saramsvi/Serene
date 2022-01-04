@@ -8,21 +8,49 @@
 
 /* Begin PBXBuildFile section */
 		1EA722E2275C036D004319A3 /* SereneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA722E1275C036D004319A3 /* SereneApp.swift */; };
-		1EA722E4275C036D004319A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA722E3275C036D004319A3 /* ContentView.swift */; };
 		1EA722E6275C036F004319A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EA722E5275C036F004319A3 /* Assets.xcassets */; };
 		1EA722E9275C036F004319A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EA722E8275C036F004319A3 /* Preview Assets.xcassets */; };
 		1EA722EB275C036F004319A3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA722EA275C036F004319A3 /* Persistence.swift */; };
 		1EA722EE275C036F004319A3 /* Serene.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1EA722EC275C036F004319A3 /* Serene.xcdatamodeld */; };
+		1EA722FA275C0527004319A3 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA722F6275C0526004319A3 /* SignUpView.swift */; };
+		1EA722FB275C0527004319A3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA722F7275C0526004319A3 /* SettingsView.swift */; };
+		1EA722FC275C0527004319A3 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA722F8275C0527004319A3 /* ProfileView.swift */; };
+		1EA72312275C053A004319A3 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA7230E275C053A004319A3 /* VisualEffectBlur.swift */; };
+		1EA72313275C053A004319A3 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA7230F275C053A004319A3 /* ImagePicker.swift */; };
+		1EA72319275C05D3004319A3 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1EA72318275C05D3004319A3 /* FirebaseAuth */; };
+		1EA7232A275C12C3004319A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1EA72329275C12C3004319A3 /* GoogleService-Info.plist */; };
+		1EA72344275D0F9A004319A3 /* GradientText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA7233D275D0F99004319A3 /* GradientText.swift */; };
+		1EA72346275D0F9A004319A3 /* TextFieldIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA7233F275D0F99004319A3 /* TextFieldIcon.swift */; };
+		1EA72347275D0F9A004319A3 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA72340275D0F99004319A3 /* GradientButton.swift */; };
+		1EA72348275D0F9A004319A3 /* SignInWithAppleObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA72341275D0F99004319A3 /* SignInWithAppleObject.swift */; };
+		1EA72349275D0F9A004319A3 /* GradientTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA72342275D0F9A004319A3 /* GradientTextField.swift */; };
+		1EA7234A275D0F9A004319A3 /* SignInWithAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA72343275D0F9A004319A3 /* SignInWithAppleButton.swift */; };
+		1EBF3858275E4BFB0084672F /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EA7231C275C0724004319A3 /* CloudKit.framework */; };
+		1EE2C984276F3F810091B9E7 /* GradientProfilePictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE2C983276F3F810091B9E7 /* GradientProfilePictureView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1EA722DE275C036D004319A3 /* Serene.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Serene.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EA722E1275C036D004319A3 /* SereneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SereneApp.swift; sourceTree = "<group>"; };
-		1EA722E3275C036D004319A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1EA722E5275C036F004319A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EA722E8275C036F004319A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1EA722EA275C036F004319A3 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		1EA722ED275C036F004319A3 /* Serene.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Serene.xcdatamodel; sourceTree = "<group>"; };
+		1EA722F6275C0526004319A3 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		1EA722F7275C0526004319A3 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		1EA722F8275C0527004319A3 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		1EA7230E275C053A004319A3 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
+		1EA7230F275C053A004319A3 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		1EA7231A275C071E004319A3 /* Serene.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Serene.entitlements; sourceTree = "<group>"; };
+		1EA7231C275C0724004319A3 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		1EA72329275C12C3004319A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1EA7233D275D0F99004319A3 /* GradientText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientText.swift; sourceTree = "<group>"; };
+		1EA7233F275D0F99004319A3 /* TextFieldIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldIcon.swift; sourceTree = "<group>"; };
+		1EA72340275D0F99004319A3 /* GradientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		1EA72341275D0F99004319A3 /* SignInWithAppleObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInWithAppleObject.swift; path = ../../../../Account/Authentication/Authentication/Views/SignInWithAppleObject.swift; sourceTree = "<group>"; };
+		1EA72342275D0F9A004319A3 /* GradientTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientTextField.swift; sourceTree = "<group>"; };
+		1EA72343275D0F9A004319A3 /* SignInWithAppleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInWithAppleButton.swift; sourceTree = "<group>"; };
+		1EE2C983276F3F810091B9E7 /* GradientProfilePictureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientProfilePictureView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EA72319275C05D3004319A3 /* FirebaseAuth in Frameworks */,
+				1EBF3858275E4BFB0084672F /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +71,7 @@
 			children = (
 				1EA722E0275C036D004319A3 /* Serene */,
 				1EA722DF275C036D004319A3 /* Products */,
+				1EA7231B275C0724004319A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,11 +86,11 @@
 		1EA722E0275C036D004319A3 /* Serene */ = {
 			isa = PBXGroup;
 			children = (
-				1EA722E1275C036D004319A3 /* SereneApp.swift */,
-				1EA722E3275C036D004319A3 /* ContentView.swift */,
-				1EA722E5275C036F004319A3 /* Assets.xcassets */,
-				1EA722EA275C036F004319A3 /* Persistence.swift */,
+				1EA722F4275C039A004319A3 /* Account */,
+				1EA7231A275C071E004319A3 /* Serene.entitlements */,
+				1EA72329275C12C3004319A3 /* GoogleService-Info.plist */,
 				1EA722EC275C036F004319A3 /* Serene.xcdatamodeld */,
+				1EA722E5275C036F004319A3 /* Assets.xcassets */,
 				1EA722E7275C036F004319A3 /* Preview Content */,
 			);
 			path = Serene;
@@ -71,6 +102,51 @@
 				1EA722E8275C036F004319A3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1EA722F4275C039A004319A3 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				1EA7230C275C053A004319A3 /* Helpers */,
+				1EA722E1275C036D004319A3 /* SereneApp.swift */,
+				1EA722EA275C036F004319A3 /* Persistence.swift */,
+				1EA722F6275C0526004319A3 /* SignUpView.swift */,
+				1EA722F8275C0527004319A3 /* ProfileView.swift */,
+				1EA722F7275C0526004319A3 /* SettingsView.swift */,
+				1EA722FD275C0534004319A3 /* Views */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		1EA722FD275C0534004319A3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1EE2C983276F3F810091B9E7 /* GradientProfilePictureView.swift */,
+				1EA72340275D0F99004319A3 /* GradientButton.swift */,
+				1EA7233D275D0F99004319A3 /* GradientText.swift */,
+				1EA72342275D0F9A004319A3 /* GradientTextField.swift */,
+				1EA72343275D0F9A004319A3 /* SignInWithAppleButton.swift */,
+				1EA72341275D0F99004319A3 /* SignInWithAppleObject.swift */,
+				1EA7233F275D0F99004319A3 /* TextFieldIcon.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1EA7230C275C053A004319A3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1EA7230E275C053A004319A3 /* VisualEffectBlur.swift */,
+				1EA7230F275C053A004319A3 /* ImagePicker.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1EA7231B275C0724004319A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EA7231C275C0724004319A3 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,6 +165,9 @@
 			dependencies = (
 			);
 			name = Serene;
+			packageProductDependencies = (
+				1EA72318275C05D3004319A3 /* FirebaseAuth */,
+			);
 			productName = Serene;
 			productReference = 1EA722DE275C036D004319A3 /* Serene.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +196,9 @@
 				Base,
 			);
 			mainGroup = 1EA722D5275C036D004319A3;
+			packageReferences = (
+				1EA72317275C05D3004319A3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 1EA722DF275C036D004319A3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -132,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EA722E9275C036F004319A3 /* Preview Assets.xcassets in Resources */,
+				1EA7232A275C12C3004319A3 /* GoogleService-Info.plist in Resources */,
 				1EA722E6275C036F004319A3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,10 +226,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EA72348275D0F9A004319A3 /* SignInWithAppleObject.swift in Sources */,
+				1EA72313275C053A004319A3 /* ImagePicker.swift in Sources */,
+				1EE2C984276F3F810091B9E7 /* GradientProfilePictureView.swift in Sources */,
+				1EA722FC275C0527004319A3 /* ProfileView.swift in Sources */,
+				1EA722FB275C0527004319A3 /* SettingsView.swift in Sources */,
+				1EA72312275C053A004319A3 /* VisualEffectBlur.swift in Sources */,
+				1EA72346275D0F9A004319A3 /* TextFieldIcon.swift in Sources */,
 				1EA722EB275C036F004319A3 /* Persistence.swift in Sources */,
+				1EA72347275D0F9A004319A3 /* GradientButton.swift in Sources */,
+				1EA72349275D0F9A004319A3 /* GradientTextField.swift in Sources */,
 				1EA722EE275C036F004319A3 /* Serene.xcdatamodeld in Sources */,
-				1EA722E4275C036D004319A3 /* ContentView.swift in Sources */,
+				1EA722FA275C0527004319A3 /* SignUpView.swift in Sources */,
+				1EA72344275D0F9A004319A3 /* GradientText.swift in Sources */,
 				1EA722E2275C036D004319A3 /* SereneApp.swift in Sources */,
+				1EA7234A275D0F9A004319A3 /* SignInWithAppleButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,17 +368,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Serene/Serene.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Serene/Preview Content\"";
 				DEVELOPMENT_TEAM = J434Z8A5ZN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Serene/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeRight UIInterfaceOrientationLandscapeLeft";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,6 +391,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.saramsvi.Serene;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -303,17 +403,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Serene/Serene.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Serene/Preview Content\"";
 				DEVELOPMENT_TEAM = J434Z8A5ZN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Serene/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeRight UIInterfaceOrientationLandscapeLeft";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,6 +426,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.saramsvi.Serene;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -349,6 +455,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1EA72317275C05D3004319A3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1EA72318275C05D3004319A3 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1EA72317275C05D3004319A3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		1EA722EC275C036F004319A3 /* Serene.xcdatamodeld */ = {

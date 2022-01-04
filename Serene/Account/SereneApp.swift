@@ -6,14 +6,17 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct SereneApp: App {
     let persistenceController = PersistenceController.shared
-
+    init(){
+        FirebaseApp.configure()
+    }
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SignUpView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
