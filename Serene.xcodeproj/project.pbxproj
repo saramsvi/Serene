@@ -86,6 +86,7 @@
 		1EA722E0275C036D004319A3 /* Serene */ = {
 			isa = PBXGroup;
 			children = (
+				1EF3F13A2784CF940001D541 /* Menu */,
 				1EA722F4275C039A004319A3 /* Account */,
 				1EA7231A275C071E004319A3 /* Serene.entitlements */,
 				1EA72329275C12C3004319A3 /* GoogleService-Info.plist */,
@@ -147,6 +148,13 @@
 				1EA7231C275C0724004319A3 /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1EF3F13A2784CF940001D541 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,6 +385,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Serene/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Serene;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -412,6 +421,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Serene/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Serene;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
