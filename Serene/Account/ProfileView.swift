@@ -9,6 +9,8 @@ import SwiftUI
 //import Purchases
 import FirebaseAuth
 import CoreData
+private let generator = UISelectionFeedbackGenerator()
+
 struct ProfileView: View {
     
     @State private var showLoader: Bool = false
@@ -116,8 +118,8 @@ struct ProfileView: View {
                 .padding(16)
                 // the button that  takes you to main menu  after registration
                 GradientButton(buttonTitle: continueButtonTitle) {
-                    print("Registered and continue to main menu")
-                    
+                    generator.selectionChanged()
+                       
                 }
                 .padding(.horizontal,16)
                 

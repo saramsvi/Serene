@@ -219,8 +219,9 @@ struct SignUpView: View {
             }
         }
         //ino cm kon
+        // ProfileView() bud (safe ke baz beshe in mimune)
                 .fullScreenCover(isPresented: $showProfileView){
-                    ProfileView()
+                   MenuView()
                }
         //ta inja
         
