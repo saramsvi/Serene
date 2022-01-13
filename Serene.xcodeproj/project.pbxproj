@@ -35,7 +35,6 @@
 		1EF3F14B278F3B3E0001D541 /* EntriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3F147278F3B3E0001D541 /* EntriesView.swift */; };
 		1EF3F14E278F3C7D0001D541 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3F14D278F3C7D0001D541 /* Entry.swift */; };
 		1EF3F152278F404C0001D541 /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3F150278F404C0001D541 /* SideBar.swift */; };
-		1EF3F155278F47560001D541 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3F154278F47550001D541 /* AccountView.swift */; };
 		1EF3F159278F5D7D0001D541 /* SignInWithGoogle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3F158278F5D7D0001D541 /* SignInWithGoogle.swift */; };
 		1EF3F15C2790545B0001D541 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 1EF3F15B2790545B0001D541 /* GoogleSignIn */; };
 /* End PBXBuildFile section */
@@ -70,7 +69,6 @@
 		1EF3F147278F3B3E0001D541 /* EntriesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntriesView.swift; sourceTree = "<group>"; };
 		1EF3F14D278F3C7D0001D541 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		1EF3F150278F404C0001D541 /* SideBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
-		1EF3F154278F47550001D541 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		1EF3F158278F5D7D0001D541 /* SignInWithGoogle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithGoogle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -208,7 +206,6 @@
 			children = (
 				1EF3F13B278F3A840001D541 /* MenuView.swift */,
 				1EF3F150278F404C0001D541 /* SideBar.swift */,
-				1EF3F154278F47550001D541 /* AccountView.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -304,7 +301,6 @@
 				1EF3F152278F404C0001D541 /* SideBar.swift in Sources */,
 				1EA72312275C053A004319A3 /* VisualEffectBlur.swift in Sources */,
 				1EA72346275D0F9A004319A3 /* TextFieldIcon.swift in Sources */,
-				1EF3F155278F47560001D541 /* AccountView.swift in Sources */,
 				1EA722EB275C036F004319A3 /* Persistence.swift in Sources */,
 				1EA72347275D0F9A004319A3 /* GradientButton.swift in Sources */,
 				1EA72349275D0F9A004319A3 /* GradientTextField.swift in Sources */,
