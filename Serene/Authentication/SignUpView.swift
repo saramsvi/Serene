@@ -9,6 +9,8 @@ import SwiftUI
 //for haptic
 import AudioToolbox
 import FirebaseAuth
+import GoogleSignIn
+import Firebase
 struct SignUpView: View {
     @State private var email: String = ""
     @State private var password: String = ""
@@ -28,6 +30,11 @@ struct SignUpView: View {
     @State private var alertTitle: String =  ""
     @State private var alertMessage: String = ""
     
+    // Loading Indicator...
+    @State var isLoading: Bool = false
+    
+    @AppStorage("log_Status") var log_Status = false
+    
     var  body: some View{
         ZStack {
             Image(signUpToggle ? "background-3" :"background-1" )
@@ -35,7 +42,6 @@ struct SignUpView: View {
                 .aspectRatio(contentMode: .fill)
                 .edgesIgnoringSafeArea(.all)
                 .opacity(fadeToggle ? 1.0 : 0.0)
-            
             Color("Transition")
                 .edgesIgnoringSafeArea(.all)
                 .opacity(fadeToggle ? 0.0 : 1.0)
@@ -45,7 +51,7 @@ struct SignUpView: View {
                     Text(signUpToggle ? "Sign Up" : "Sign in")
                         .font(Font.largeTitle.bold())
                         .foregroundColor(.white)
-                    Text("Access to a bunch of functions bla bla bla")
+                    Text("Your personal mental health diary!")
                         .font(.subheadline)
                         .foregroundColor(Color.white.opacity(0.7))
                     HStack (spacing: 12.0){
@@ -151,7 +157,7 @@ struct SignUpView: View {
                                     }
                                 }
                             }
-                            //                            print("Switch to Sign in")
+                            // print("Switch to Sign in")
                             withAnimation(.easeInOut(duration: 0.7))
                             {
                                 signUpToggle.toggle()
@@ -178,18 +184,47 @@ struct SignUpView: View {
                                         .font(.footnote.bold())
                                 }
                             })
-                            
                             Rectangle()
                                 .frame(height:1)
                                 .foregroundColor(.white.opacity(0.1))
                             Button(action: {
-                                //                                print("Sign in with Apple")
+                                //  print("Sign in with Apple")
                                 signInWithAppleObject.signInWithApple()
                             }, label: {
                                 SignInWithAppleButton()
                                     .frame(height:50)
                                     .cornerRadius(16)
                             })
+                            Button(action: {
+                                // handleLogin()
+                                GoogleSignIn()
+                                 print("google login")
+                             },label: {
+                                 HStack(spacing:0.5){
+                                    Image("google")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 30, height: 30)
+                                        .padding(1)
+                                    Text("Sign in with Google")
+                                        .font(.headline)
+                                        .fontWeight(.semibold)
+                                }
+                                .foregroundColor(Color(.white))
+                                .padding()
+                                .frame(maxWidth: .infinity, maxHeight: 50)
+                                .background(
+                                    RoundedRectangle(cornerRadius: 16)
+                                        .fill(Color.black)
+                                )
+                            }
+                          )
+                                .onAppear(){
+                                    if !log_Status{
+                                        // Home View...
+                                            showProfileView.toggle()
+                                    }
+                                }
                         }
                         
                     })
@@ -221,13 +256,13 @@ struct SignUpView: View {
         //ino cm kon
         // ProfileView() bud (safe ke baz beshe in mimune)
                 .fullScreenCover(isPresented: $showProfileView){
-                   MenuView()
+                  // MenuView()
+                    ProfileView()
                }
         //ta inja
         
     }
     func SignUp() {
-        
         if signUpToggle  {
             Auth.auth().createUser(withEmail: email, password: password){
                 result,error  in
@@ -251,6 +286,63 @@ struct SignUpView: View {
             }
         }
     }
+    func GoogleSignIn(){
+        
+        // Google Sign in...
+        
+        guard let clientID = FirebaseApp.app()?.options.clientID else { return }
+
+        // Create Google Sign In configuration object.
+        let config = GIDConfiguration(clientID: clientID)
+        
+        isLoading = true
+        
+        GIDSignIn.sharedInstance.signIn(with: config, presenting: getRootViewController()) {
+            [self] user, err in
+            
+            if let error = err {
+                isLoading = false
+                print(error.localizedDescription)
+              return
+            }
+
+            guard
+              let authentication = user?.authentication,
+              let idToken = authentication.idToken
+            else {
+                isLoading = false
+              return
+            }
+
+            let credential = GoogleAuthProvider.credential(withIDToken: idToken,
+                                                           accessToken: authentication.accessToken)
+            
+            // Firebase Auth...
+            Auth.auth().signIn(with: credential) {
+                result, err in
+                
+                isLoading = false
+                
+                if let error = err {
+                    print(error.localizedDescription)
+                  return
+                }
+                
+                // Displaying User Name...
+                guard let user = result?.user
+                else {
+                    return
+                }
+
+                print(user.displayName ?? " Google Sign In Success!")
+                // Updating User as Logged in
+                withAnimation {
+                    log_Status = true
+                }
+            }
+        }
+    }
+    
     func  sendPasswordResetEmail(){
         Auth.auth().sendPasswordReset (withEmail: email){
             error in
@@ -269,7 +361,25 @@ struct SignUpView: View {
 }
 
 
-
+// Extending View to get SCreen Bounds... (GSignin)
+extension View{
+    func getRect()->CGRect{
+        return UIScreen.main.bounds
+    }
+    
+    // Retreiving RootView COntroller...
+    func getRootViewController()->UIViewController{
+        guard let screen = UIApplication.shared.connectedScenes.first as? UIWindowScene else{
+            return .init()
+        }
+        
+        guard let root = screen.windows.first?.rootViewController else{
+            return .init()
+        }
+        
+        return root
+    }
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

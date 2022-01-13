@@ -7,22 +7,20 @@
 import SwiftUI
 
 struct MenuView: View {
-    #if os(iOS)
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
-    #endif
+   
     
     @ViewBuilder
     var body: some View {
-        #if os(iOS)
         if horizontalSizeClass == .compact {
             EntriesView()
         } else {
             EntriesView()
         }
-        #else
-        SideBar()
-            .frame(minWidth: 1000, minHeight: 600)
-        #endif
+//        #else
+//        SideBar()
+//            .frame(minWidth: 1000, minHeight: 600)
+//        #endif
     }
 }
 struct MenuView_Previews: PreviewProvider {

@@ -24,7 +24,7 @@ struct EntriesView: View {
             if horizontalSizeClass == .compact {
                 tabBar
             } else {
-                sidebar
+                SideBar
             }
             fullContent
                 .background(VisualEffectBlur(blurStyle: .systemMaterial).edgesIgnoringSafeArea(.all))
@@ -160,7 +160,7 @@ struct EntriesView: View {
                 Text("Entries")
             }
             NavigationView {
-                // CourseList()
+          //  AccountView()
             }
             .tabItem {
                 Image(systemName: "person")
@@ -169,11 +169,13 @@ struct EntriesView: View {
         }
     }
     @ViewBuilder
-    var sidebar: some View {
+    var SideBar: some View {
 #if os(iOS)
         NavigationView {
             List {
-                Label("Account", systemImage: "person")
+//                NavigationLink(destination: AccountView()) {
+//                    Label("Account", systemImage: "person")
+//                }
                 Label("Home", systemImage: "house")
                 Label("Analyze", systemImage: "chart.bar.doc.horizontal")
                 NavigationLink(destination: content) {
@@ -182,15 +184,15 @@ struct EntriesView: View {
             }
             .listStyle(SidebarListStyle())
             .navigationTitle("Serene Diary")
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button {
-                        print("account page ")
-                    } label: {
-                        Image(systemName: "person.crop.circle")
-                    }
-                }
-            }
+//            .toolbar {
+//                ToolbarItem(placement: .navigationBarTrailing) {
+//                    Button {
+//                        print("account page ")
+//                    } label: {
+//                        Image(systemName: "person.crop.circle")
+//                    }
+//                }
+//            }
             content
         }
 #endif
