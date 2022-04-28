@@ -20,7 +20,7 @@ struct Entry: Identifiable, Hashable {
 var entries = [
     Entry(
         mood: "HAPPY",
-        date: "10.October.2000",
+        date: "DD.MM.YYYY",
         CardColorTop: "Yellow",
         CardColorDown: "LightBlue",
         image: "Illustration 1",
@@ -29,7 +29,7 @@ var entries = [
     ),
     Entry(
         mood: "SAD",
-        date: "20 sections",
+        date: "DD.MM.YYYY",
         CardColorTop: "Green",
         CardColorDown: "Purple",
         image: "Illustration 2",
@@ -38,7 +38,7 @@ var entries = [
     ),
     Entry(
         mood: "Mixed Feelings",
-        date: "12 sections",
+        date: "DD.MM.YYYY",
         CardColorTop: "Grey",
         CardColorDown: "Purple",
 
@@ -48,7 +48,7 @@ var entries = [
     ),
     Entry(
         mood: "ANGRY",
-        date: "12 sections",
+        date: "DD.MM.YYYY",
         CardColorTop: "Red",
         CardColorDown: "LightBlue",
         image: "Illustration 4",
@@ -57,7 +57,7 @@ var entries = [
     ),
     Entry(
         mood: "RELAXED",
-        date: "60 sections",
+        date: "DD.MM.YYYY",
         CardColorTop: "LightBlue",
         CardColorDown: "Purple",
         image: "Illustration 5",
@@ -66,7 +66,7 @@ var entries = [
     ),
     Entry(
         mood: "CONFUSED",
-        date: "12 sections",
+        date: "DD.MM.YYYY",
         CardColorTop: "DarkPurple",
         CardColorDown: "LightBlue",
         image: "Illustration 6",
@@ -75,7 +75,7 @@ var entries = [
     ),
     Entry(
         mood: "STRESSED",
-        date: "12 sections",
+        date: "DD.MM.YYYY",
         CardColorTop: "Orange",
         CardColorDown: "Purple",
         image: "Illustration 7",

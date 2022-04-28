@@ -11,9 +11,11 @@ struct GradientButton: View {
     @State private var angle = 0.0
     var  gradient1:[Color] = [
         Color.init(red:101/255, green:64/255,blue: 1),
-        Color.init(red:1, green:1,blue: 80/255),
+        //yellow
+   Color.init(red:1, green:1,blue: 80/255),
         Color.init(red:109/255, green: 1,blue: 185/255),
         Color.init(red:39/255, green:232/255,blue: 1)
+     
     ]
     var buttonTitle: String
     var buttonAction: ()-> Void

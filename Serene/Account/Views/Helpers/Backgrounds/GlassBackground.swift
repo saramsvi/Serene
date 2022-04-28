@@ -17,18 +17,10 @@ struct GlassBackground: View {
         GeometryReader { proxy in
             let size = proxy.size
             // Slighlty Darkening ...
-            #if os(iOS)
             Color(UIColor.systemBackground)
                 .opacity(0.7)
                 .blur(radius: 111)
                 .ignoresSafeArea()
-            #else
-            Color(.white)
-                .opacity(0.7)
-                .blur(radius: 111)
-                .ignoresSafeArea()
-             #endif
-            
             Circle()
                 .fill(Color("Purple"))
                 .padding(30)
@@ -46,16 +38,14 @@ struct GlassBackground: View {
                 .padding(80)
                 .blur(radius: 111)
             // Moving Top...
-                .offset(x: size.width / 1.8, y: size.height / 2)
-            
+                .offset(x: size.width / 1.8, y: size.height / 2)   
             // Adding Purple on both botom ends...
             Circle()
                 .fill(Color("Purple"))
                 .padding(100)
                 .blur(radius: 111)
             // Moving Top...
-                .offset(x: size.width / 1.8, y: size.height / 2)
-            
+                .offset(x: size.width / 1.8, y: size.height / 2)    
             Circle()
                 .fill(Color("LightBlue"))
                 .padding(100)
@@ -65,3 +55,9 @@ struct GlassBackground: View {
         }
     }
 }
+struct GlassBackground_Previews: PreviewProvider {
+    static var previews: some View {
+        GlassBackground()
+    }
+}
+

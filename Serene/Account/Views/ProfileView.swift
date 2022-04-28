@@ -21,11 +21,10 @@ struct ProfileView: View {
     @State private var alertTitle: String =  ""
     @State private var alertMessage: String = ""
     @State private var showSettingsView: Bool = false
-    
+    @State private var showMenuView: Bool = false
     @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest(sortDescriptors: [NSSortDescriptor(keyPath: \Account.userSince, ascending: true)], predicate: NSPredicate(format: "userID == %@", Auth.auth().currentUser!.uid), animation: .default) private var  savedAccounts: FetchedResults<Account>
     @State private var currentAccount : Account?
-    
     @State private var updater: Bool = true
     
     var body: some View {
@@ -61,7 +60,6 @@ struct ProfileView: View {
                             Text(currentAccount?.surname  ??  "No surname")
                                 .foregroundColor(.white .opacity(0.7))
                                 .font(.footnote)
-                            
                         }
                         Spacer()
                         
@@ -109,18 +107,21 @@ struct ProfileView: View {
 //                                .foregroundColor(Color.white.opacity(0.7))
 //                                .font(.footnote)
 //                        }
-                        Label("A member since \(dateFormatter(currentAccount?.userSince ?? Date()))", systemImage: "calendar")
+                 
+                        Label("\(dateFormatter(currentAccount?.userSince ?? Date()))" , systemImage: "calendar")
                             .foregroundColor(.white.opacity(0.7))
                             .font(.footnote)
-                    
+                      
                     }
                 }
                 .padding(16)
                 // the button that  takes you to main menu  after registration
                 GradientButton(buttonTitle: continueButtonTitle) {
                     generator.selectionChanged()
-                       
+                    showMenuView.toggle()
+                    print("move to main")
                 }
+                
                 .padding(.horizontal,16)
                 
                 .padding(.bottom)
@@ -134,35 +135,34 @@ struct ProfileView: View {
             )
             .cornerRadius(30)
             .padding(.horizontal)
-            
-            VStack {
-                Spacer()
-                Button(action:{
-                    //  print("sign out")
-                    signout()
-                    
-                },
-                       label: {
-                    Image(systemName: "arrow.turn.up.forward.iphone.fill")
-                    
-                    
-                        .foregroundColor(.white)
-                        .font(.system(size: 15, weight: .medium, design: .rounded))
-                        .rotation3DEffect(
-                            Angle(degrees: 180),
-                            axis: (x: 0.0, y: 0.0, z: 1.0)
-                        )
-                        .background(
-                            Circle()
-                                .stroke(Color.white.opacity(0.2), lineWidth: 1)
-                                .frame(width: 42, height: 42, alignment: .center)
-                                .overlay(VisualEffectBlur(blurStyle: .dark).cornerRadius(21))
-                                .frame(width: 42, height: 42, alignment: .center)
-                        )
-                })
-            }
-            .padding(.bottom,64)
-            
+//            
+//            VStack {
+//                Spacer()
+//                Button(action:{
+//                    //  print("sign out")
+//                    signout()
+//                },
+//                       label: {
+//                    Image(systemName: "arrow.turn.up.forward.iphone.fill")
+//                    
+//                    
+//                        .foregroundColor(.white)
+//                        .font(.system(size: 15, weight: .medium, design: .rounded))
+//                        .rotation3DEffect(
+//                            Angle(degrees: 180),
+//                            axis: (x: 0.0, y: 0.0, z: 1.0)
+//                        )
+//                        .background(
+//                            Circle()
+//                                .stroke(Color.white.opacity(0.2), lineWidth: 1)
+//                                .frame(width: 42, height: 42, alignment: .center)
+//                                .overlay(VisualEffectBlur(blurStyle: .dark).cornerRadius(21))
+//                                .frame(width: 42, height: 42, alignment: .center)
+//                        )
+//                })
+//            }
+//            .padding(.bottom,64)
+//            
             if showLoader {
                 progressViewStyle(CircularProgressViewStyle())
             }
@@ -183,7 +183,6 @@ struct ProfileView: View {
         .onAppear(){
             currentAccount = savedAccounts.first
             if currentAccount == nil{
-        
                 //add  data to core data
                 let userDataToSave = Account(context: viewContext)
                 userDataToSave.name = Auth.auth().currentUser!.displayName
@@ -199,7 +198,6 @@ struct ProfileView: View {
                     try viewContext.save()
                     
                 }
-                
                 catch let error {
                     alertTitle = "Could not create an account!"
                     alertMessage = error.localizedDescription
@@ -207,18 +205,6 @@ struct ProfileView: View {
                 }
             }
         }
-}
-func signout(){
-    do {
-        try Auth.auth().signOut()
-        presentationMode.wrappedValue.dismiss()
-    }
-    catch let error{
-        alertTitle =  "Uh-oh!"
-        alertMessage = error.localizedDescription
-        showAlertView.toggle()
-        
-    }
 }
 
     func  dateFormatter(_ date: Date) -> String{

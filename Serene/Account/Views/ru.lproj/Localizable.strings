@@ -1,0 +1,28 @@
+/////////////////////////////////////////////SignUp View////////////////////////
+"Sign Up" = "Регистрация";
+"Sign In" = "Авторизация";
+"Your personal mental health diary!" = "Твой персональный дневник здоровья!";
+"Email" = "Электронная почта";
+"Password" = "Пароль";
+"CreateAccountButton" = "Зарегистрироваться";
+"SigninButton" = "Войти";
+"By clicking on Sign up you agree to our terms of service and Privacy policy" = "Нажимая «Зарегистрироваться», вы соглашаетесь с нашими условиями обслуживания и политикой конфиденциальности";
+"Already have an account?" =  "Уже зарегистрированы?";
+"Don't have  an account?"= "Не зарегистрированы?";
+"Forgot password?" = "Забыли пароль?";
+"Reset Password" = "Восстановить пароль";
+"Sign in with Google" = "Войти с Google аккаунта";
+"Uh-oh!" = "Упс!";
+"Password reset email sent" = "Ссылка для восстановления пароля отправлено";
+"Check your inbox for an email to reset your password" = "Проверьте свой почтовый ящик на наличие письма для восстановления пароля";
+
+/////////////////////////////////////////////Account View////////////////////////
+"Contacts" = "Контакты";
+"Whether you're curious about features, have suggestions for improving Serene or the answer you're looking for isn't in FAQ, contact us and let's have a talk!" = "Если у тебя есть предложения по улучшению Serene или ответ, который ты ищещь, отсутствует в FAQ, свяжись с нами и давай поговорим!";
+/////////////////////////////////////////////Profile View//////////////////////// doesnt work
+"A member since" = "С нами с";
+
+/////////////////////////////////////////////Settings View////////////////////////
+
+"Settings" = "Настройки";
+"Manage your account!" = "Управляй учетной записью!";

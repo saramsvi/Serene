@@ -13,7 +13,7 @@ struct GradientText: View {
     var text: String = "Text Here"
     var body: some View {
         Text(text)
-            .gradientForeground(colors: [Color("pink-gradient-1"),Color("pink-gradient-2")])
+            .gradientForeground(colors: [Color("blue-gradient"),Color("pink-gradient")])
     }
 }
 

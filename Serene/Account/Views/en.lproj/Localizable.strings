@@ -1,0 +1,27 @@
+/////////////////////////////////////////////SignUp View////////////////////////
+"Sign Up" = "Sign Up";
+"Sign In" = "Sign In";
+"Your personal mental health diary!" = "Your personal mental health diary!";
+"Email" = "Email";
+"Password" = "Password";
+"CreateAccountButton" = "Create Account";
+"SigninButton" = "Sign in";
+"By clicking on Sign up you agree to our terms of service and Privacy policy" = "By clicking on Sign up you agree to our terms of service and Privacy policy";
+"Already have an account?" =  "Already have an account?";
+"Don't have  an account?" = "Don't have  an account?";  
+"Forgot password?" = "Forgot password?";
+"Reset Password" = "Reset Password";
+"Sign in with Google" = "Sign in with Google";
+// Not working properly
+"Uh-oh!" = "Uh-oh!";
+"Password reset email sent" = "Password reset email sent";
+"Check your inbox for an email to reset your password" = "Check your inbox for an email to reset your password";
+// Not working properly
+/////////////////////////////////////////////SignUp View////////////////////////
+"Contacts" = "Contacts";
+"Whether you're curious about features, have suggestions for improving Serene or the answer you're looking for isn't in FAQ, contact us and let's have a talk!" = "Whether you're curious about features, have suggestions for improving Serene or the answer you're looking for isn't in FAQ, contact us and let's have a talk!";
+/////////////////////////////////////////////Profile View//////////////////////// doesnt work
+"A member since" = "A member since";
+/////////////////////////////////////////////Settings View//////////////////////// not complete
+"Settings" = "Settings";
+"Manage your account!"  = "Manage your account!";

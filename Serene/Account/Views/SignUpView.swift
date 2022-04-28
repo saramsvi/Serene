@@ -19,21 +19,19 @@ struct SignUpView: View {
     @State private var emailIconBounce: Bool = false
     @State private var passwordIconBounce: Bool = false
     @State private var showProfileView: Bool = false
+    @State private var showMenuView: Bool = false
     @State private var signUpToggle:  Bool = true
     @State private var rotationAngle = 0.0
     @State private var signInWithAppleObject = SigninWithAppleObject()
     @State private var fadeToggle : Bool = true
     //used to generate haptics
     private let generator = UISelectionFeedbackGenerator()
-    
     @State private var showAlertView: Bool = false
     @State private var alertTitle: String =  ""
     @State private var alertMessage: String = ""
-    
     // Loading Indicator...
     @State var isLoading: Bool = false
-    
-    @AppStorage("log_Status") var log_Status = false
+    @AppStorage("log_Status") var Glog_Status = false 
     
     var  body: some View{
         ZStack {
@@ -42,13 +40,12 @@ struct SignUpView: View {
                 .aspectRatio(contentMode: .fill)
                 .edgesIgnoringSafeArea(.all)
                 .opacity(fadeToggle ? 1.0 : 0.0)
-            Color("Transition")
+           //Transition
+            GlassBackground()
                 .edgesIgnoringSafeArea(.all)
-                .opacity(fadeToggle ? 0.0 : 1.0)
-            
             VStack {
                 VStack(alignment: .leading, spacing: 16) {
-                    Text(signUpToggle ? "Sign Up" : "Sign in")
+                    Text(signUpToggle ? "Sign Up" : "Sign In")
                         .font(Font.largeTitle.bold())
                         .foregroundColor(.white)
                     Text("Your personal mental health diary!")
@@ -125,7 +122,9 @@ struct SignUpView: View {
                             }
                         }
                     }
-                    GradientButton(buttonTitle:  signUpToggle ? "Create Account"  : "Sign in") {
+                    
+                    /////////////////////////////////////////////////////////// TO BE LOCALISED
+                    GradientButton(buttonTitle:  signUpToggle ? "Create Account"  :"Sign in") {
                         generator.selectionChanged()
                         SignUp()
                     }
@@ -134,12 +133,13 @@ struct SignUpView: View {
                         Auth.auth().addStateDidChangeListener{
                             auth, user in
                             if user != nil {
-                                showProfileView.toggle()
+                                showMenuView.toggle()
                             }
                         }
                     }
                     if signUpToggle
-                    { Text("By clicking on Sign up you agree to our terms of service and Privacy policy")
+                    {
+                        Text("By clicking on Sign up you agree to our terms of service and Privacy policy")
                         .font(.footnote)
                         .foregroundColor(.white.opacity(0.7))
                         Rectangle()
@@ -188,7 +188,7 @@ struct SignUpView: View {
                                 .frame(height:1)
                                 .foregroundColor(.white.opacity(0.1))
                             Button(action: {
-                                //  print("Sign in with Apple")
+                                generator.selectionChanged()
                                 signInWithAppleObject.signInWithApple()
                             }, label: {
                                 SignInWithAppleButton()
@@ -196,9 +196,8 @@ struct SignUpView: View {
                                     .cornerRadius(16)
                             })
                             Button(action: {
-                                // handleLogin()
+                                generator.selectionChanged()
                                 GoogleSignIn()
-                                 print("google login")
                              },label: {
                                  HStack(spacing:0.5){
                                     Image("google")
@@ -220,9 +219,9 @@ struct SignUpView: View {
                             }
                           )
                                 .onAppear(){
-                                    if !log_Status{
+                                    if !Glog_Status{
                                         // Home View...
-                                            showProfileView.toggle()
+                                         showMenuView.toggle()
                                     }
                                 }
                         }
@@ -255,15 +254,17 @@ struct SignUpView: View {
         }
         //ino cm kon
         // ProfileView() bud (safe ke baz beshe in mimune)
-                .fullScreenCover(isPresented: $showProfileView){
-                  // MenuView()
-                    ProfileView()
+                .fullScreenCover(isPresented: $showMenuView){
+                   //MenuView()
+                    CustomTabBar()
+                  //if user is new
+                    //ProfileView()
                }
         //ta inja
         
     }
-    func SignUp() {
-        if signUpToggle  {
+    func SignUp(){
+        if signUpToggle{
             Auth.auth().createUser(withEmail: email, password: password){
                 result,error  in
                 guard error == nil else {
@@ -272,12 +273,15 @@ struct SignUpView: View {
                     self.showAlertView.toggle()
                     return
                 }
+              
             }
+    
         }
         else{
             Auth.auth().signIn(withEmail: email, password: password){
                 result,error in
-                guard error == nil else{
+                guard error == nil
+                else {
                     self.alertTitle = "Uh-oh!"
                     self.alertMessage = error!.localizedDescription
                     self.showAlertView.toggle()
@@ -316,7 +320,6 @@ struct SignUpView: View {
 
             let credential = GoogleAuthProvider.credential(withIDToken: idToken,
                                                            accessToken: authentication.accessToken)
-            
             // Firebase Auth...
             Auth.auth().signIn(with: credential) {
                 result, err in
@@ -327,22 +330,19 @@ struct SignUpView: View {
                     print(error.localizedDescription)
                   return
                 }
-                
                 // Displaying User Name...
                 guard let user = result?.user
                 else {
                     return
                 }
-
                 print(user.displayName ?? " Google Sign In Success!")
                 // Updating User as Logged in
                 withAnimation {
-                    log_Status = true
+                    Glog_Status = true
                 }
             }
         }
     }
-    
     func  sendPasswordResetEmail(){
         Auth.auth().sendPasswordReset (withEmail: email){
             error in
@@ -359,14 +359,11 @@ struct SignUpView: View {
         }
     }
 }
-
-
 // Extending View to get SCreen Bounds... (GSignin)
 extension View{
     func getRect()->CGRect{
         return UIScreen.main.bounds
     }
-    
     // Retreiving RootView COntroller...
     func getRootViewController()->UIViewController{
         guard let screen = UIApplication.shared.connectedScenes.first as? UIWindowScene else{
@@ -380,6 +377,7 @@ extension View{
         return root
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

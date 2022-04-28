@@ -61,12 +61,11 @@ struct TextFieldIcon: View {
                 }
                 else{
                 Image(systemName: iconName)
-                    .gradientForeground(colors: [Color("pink-gradient-1"),Color("pink-gradient-2")])
+                    .gradientForeground(colors: [Color("blue-gradient"),Color("pink-gradient")])
                     .font(.system(size: 17, weight: .medium))
-            }
+              }
             }
         )
-        
         .frame(width: 36, height: 36)
         .padding([.vertical, .leading], 8)
     }
