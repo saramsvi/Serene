@@ -1,0 +1,65 @@
+"settings_language" = "Русский";
+/////////////////////////////////////////////SignUp View////////////////////////
+"Sign Up" = "Регистрация";
+"Sign in" = "Авторизация";
+"Your personal mental health diary!" = "Твой персональный дневник здоровья!";
+"Email" = "Электронная почта";
+"Password" = "Пароль";
+"CreateAccountButton" = "Зарегистрироваться";
+"SigninButton" = "Войти";
+"Reset Password" = "Восстановить пароль";
+"By clicking on Sign up you agree to our terms of service and Privacy policy" = "Нажимая «Зарегистрироваться», вы соглашаетесь с нашими условиями обслуживания и политикой конфиденциальности";
+"Already have an account?" =  "Уже зарегистрированы?";
+"Don't have  an account?"= "Не зарегистрированы?";
+"Forgot password?" = "Забыли пароль?";
+"Reset Password" = "Восстановить пароль";
+"Sign in with Google" = "Войти с Google аккаунта";
+"Uh-oh!" = "Ой-ой!";
+"Password reset email sent" = "Ссылка для восстановления пароля отправлено";
+"Check your inbox for an email to reset your password" = "Проверь свой почтовый ящик на наличие письма для восстановления пароля";
+"IncorrectEP" =  "Электронная почта или пароль введены неправильно! Проверь их ещё раз и убедись, что пароль состоит из 6 или более символов.";
+"CheckInput" =  "Пожалуйста проверь данные ещё раз!";
+"CheckInputTitle" = "Ой-ой! Опечатка присутствует!!";
+/////////////////////////////////////////////Account View////////////////////////
+"Contacts" = "Контакты";
+"FAQ" = "Часто Задаваемые Вопросы";
+"RateUs" = "Оцени Serene в App Store!";
+"Sign Out" = "Выйти из аккаунта";
+"Version" = "Версия 1.00";
+/////////////////////////////////////////////Profile View//////////////////////// doesnt work
+"A member since" = "С нами с";
+"Name" = "Имя";
+"Surname" = "Фамилия";
+/////////////////////////////////////////////Settings View////////////////////////
+"Settings" = "Настройки";
+"Manage your account!" = "Управляй учетной записью!";
+"ChoosePhoto" = "Выбрать фотографию";
+"SaveButton" = "Сохранить";
+"Saved!" = "Сохранено!";
+"СhangesSaved" = "Данные успешно сохранены!";
+"Tryagain" = "Попробуйте ещё раз!";
+/////////////////////////////////////////////Contact View////////////////////////
+"Email Support"  = "Написать в поддержку";
+"ContactsMsg" = "Если у тебя есть предложения по улучшению Serene или ответ, который ты ищещь, отсутствует в часто задаваемых вопросах, свяжись с нами и давай поговорим!";
+/////////////////////////////////////////////FAQ View//////////////////////// not complete
+"Have any questions?" = "Остались вопросы?";
+/////////////////////////////////////////////Lightmode  Notifications  Languages////////////////////////
+"Remind me to journal" = "Напомни мне вести дневник";
+"Max once a day" = "Максимум раз в день";
+"Notifications are disabled!" = "Уведомления отключены!";
+"Unfortunetly we can't remind to journal :(" = "К сожалению, мы не можем напомнить вести дневник :(";
+"Open Settings" = "Открыть настройки";
+
+"Lite Mode" = "Режим  Энергосбережения ";
+"Better performance. Recommended for iPhone X and older." = "Лучшая производительность. Рекомендуется для iPhone X и старше.";
+
+"App language" = "Язык приложения";
+"ChooseLanguage" = "Выбери язык интерфейса";
+
+//////////////////////////FAQ DATA/////////////////
+"What is journaling?" = "Что такое дневник?";
+"When you were a child, you might have kept a diary hidden under your mattress. It was a place to confess your struggles and fears without judgment or punishment. It likely felt good to get all of those thoughts and feelings out of your head and down on paper. The world seemed clearer. You may have stopped using a diary as you grow older. But the concept and its benefits still apply. Now it’s called journaling. It's simply writing down your thoughts and feelings to understand them more clearly. And if you struggle with stress, depression, or anxiety, keeping a journal can be a great idea. It can help you gain control of your emotions and improve your mental health." = "Когда вы были ребенком, вы, возможно, прятали дневник под матрасом. Это было место, где можно было признаться в своей борьбе и страхах без осуждения или наказания. Вероятно, было приятно выбросить все эти мысли и чувства из головы и записать на бумаге. Мир казался яснее. \n Возможно, вы перестали вести дневник, когда стали старше. Но концепция и ее преимущества по-прежнему применимы. Теперь это называется журналированием. Это просто запись своих мыслей и чувств, чтобы понять их более четко. И если вы боретесь со стрессом, депрессией или беспокойством, ведение дневника может быть отличной идеей. Это может помочь вам обрести контроль над своими эмоциями и улучшить свое психическое здоровье.";
+"Why is journaling beneficial to mental health?" = "Почему ведение дневника полезно для психического здоровья?";
+"One of the ways to deal with any overwhelming emotion is to find a healthy way to express yourself. This makes a journal a helpful tool in managing your mental health. Journaling can help you: Manage anxiety, Reduce stress, Cope with depression.  Journaling helps control your symptoms and improve your mood by: Helping you prioritize problems, fears, and concerns Tracking any symptoms day-to-day so that you can recognize triggers and learn ways to better control them, Providing an opportunity for positive self-talk and identifying negative thoughts and behaviors, When you have a problem and you're stressed, keeping a journal can help you identify what’s causing that stress or anxiety. Once you’ve identified your stressors, you can work on a plan to resolve the problems and reduce your stress. Keep in mind that journaling is just one aspect of a healthy lifestyle for better managing stress, anxiety, and mental health conditions. To get the most benefits, be sure you also:Relax and meditate each day ,Eat a healthy, balanced diet, Exercise regularly—get in some activity every day, Treat yourself to plenty of sleep each night, Stay away from alcohol and drugs, Use your journal to make sure you follow these guidelines daily." = "Один из способов справиться с подавляющими эмоциями — найти здоровый способ самовыражения. Это делает дневник полезным инструментом в управлении своим психическим здоровьем. Ведение дневника может помочь вам: Справиться с беспокойством, Уменьшить стресс, Справиться с депрессией.  Ведение дневника помогает контролировать свои симптомы и улучшать настроение за счет: Помогая расставлять приоритеты в проблемах, страхах и беспокойствах Ежедневно отслеживать любые симптомы, чтобы вы могли распознавать триггеры и изучать способы их лучшего контроля Предоставление возможности для позитивного самоощущения - говорить и выявлять негативные мысли и поведение. Когда у вас есть проблема и вы испытываете стресс, ведение журнала может помочь вам определить, что вызывает этот стресс или беспокойство. После того, как вы определили свои стрессоры, вы можете разработать план решения проблем и снижения стресса. Имейте в виду, что ведение дневника — это лишь один из аспектов здорового образа жизни, помогающий лучше справляться со стрессом, тревогой и психическими расстройствами. Чтобы получить максимальную пользу, убедитесь, что вы также: Расслабляетесь и медитируете каждый день Соблюдайте здоровую, сбалансированную диету Регулярно занимайтесь физическими упражнениями — занимайтесь чем-то каждый день Обещайте себе много сна каждую ночь Держитесь подальше от алкоголя и наркотиков Используйте свой журнал, чтобы убедиться, что вы ежедневно следуете этим рекомендациям.";
+"How to journal?" = "Как вести дневник?";
+"Try these tips to help you get started with journaling: Try to write every day. Set aside a few minutes every day to write. This will help you to write in your journal regularly.Make it easy. Keep a pen and paper handy at all times. Then when you want to write down your thoughts, you can. You can also keep a journal on your smartphone. Write or draw whatever feels right. Your journal doesn't need to follow any certain structure. It's your own private place to discuss and create whatever you want to express your feelings. Let the words and ideas flow freely. Don't worry about spelling mistakes or what other people might think. Use your journal as you see fit. You don't have to share your journal with anyone. If you do want to share some of your thoughts with trusted friends and loved ones, you could show them parts of your journal. Keeping a journal helps you create order when your world feels like it’s in chaos. You get to know yourself by revealing your most private fears, thoughts, and feelings. Look at your writing time as personal relaxation time. It's a time when you can de-stress and wind down. Write in a place that's relaxing and soothing, maybe with a cup of tea. Look forward to your journaling time. And know that you're doing something good for your mind and body." = "Попробуйте эти советы, чтобы начать вести дневник: Старайтесь писать каждый день. Выделяйте несколько минут каждый день, чтобы писать. Это поможет вам регулярно делать записи в дневнике. Сделайте это проще. Всегда держите ручку и бумагу под рукой. Тогда, когда вы захотите записать свои мысли, вы сможете это сделать. Вы также можете вести журнал на своем смартфоне. \n Пишите или рисуйте все, что считаете нужным. Ваш журнал не должен следовать какой-либо определенной структуре. Это ваше личное пространство для обсуждения и создания всего, что вы хотите выразить своими чувствами. Пусть слова и идеи текут свободно. Не беспокойтесь об орфографических ошибках или о том, что могут подумать другие люди. Используйте свой журнал по своему усмотрению. Вам не нужно ни с кем делиться своим журналом. Если вы хотите поделиться некоторыми своими мыслями с близкими и друзьями, которым доверяете, вы можете показать им часть своего дневника.  Ведение дневника помогает навести порядок, когда кажется, что в мире царит хаос. Вы узнаете себя, раскрывая свои самые сокровенные страхи, мысли и чувства. Относитесь к тому, что вы пишете, как к личному отдыху. Это время, когда вы можете снять стресс и успокоиться. Пишите в расслабляющем и успокаивающем месте, например, за чашкой чая. С нетерпением ждем вашего времени для ведения журнала. И знайте, что вы делаете что-то хорошее для своего разума и тела.";

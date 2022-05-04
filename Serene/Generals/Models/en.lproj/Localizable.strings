@@ -1,0 +1,70 @@
+"settings_language" = "English";
+/////////////////////////////////////////////SignUp View////////////////////////
+"Sign Up" = "Sign Up";
+"Sign in" = "Sign In";
+"Your personal mental health diary!" = "Your personal mental health diary!";
+"Email" = "Email";
+"Password" = "Password";
+"CreateAccountButton" = "Create Account";
+"SigninButton" = "Sign in";
+"Reset Password" = "Восстановить пароль";
+"By clicking on Sign up you agree to our terms of service and Privacy policy" = "By clicking on Sign up you agree to our terms of service and Privacy policy";
+"Already have an account?" =  "Already have an account?";
+"Don't have  an account?" = "Don't have  an account?";  
+"Forgot password?" = "Forgot password?";
+"Reset Password" = "Reset Password";
+"Sign in with Google" = "Sign in with Google";
+"Uh-oh!" = "Uh-oh!";
+"Password reset email sent" = "Password reset email sent";
+"Check your inbox for an email to reset your password" = "Check your inbox for an email to reset your password";
+"IncorrectEP" =  "Email or Password incorrect! Check them again and make sure the password consists of 6 characters or more.";
+"CheckInput" =  "Please double check!";
+"CheckInputTitle" = "Uh-oh!Typo Alert!!";
+/////////////////////////////////////////////SignUp View////////////////////////
+"Contacts" = "Contacts";
+"Whether you're curious about features, have suggestions for improving Serene or the answer you're looking for isn't in FAQ, contact us and let's have a talk!" = "Whether you're curious about features, have suggestions for improving Serene or the answer you're looking for isn't in FAQ, contact us and let's have a talk!";
+/////////////////////////////////////////////Profile View//////////////////////// doesnt work
+"A member since" = "A member since";
+"Name" = "Name";
+"Surname" = "Фамилия";
+
+/////////////////////////////////////////////Settings View//////////////////////// not complete
+"Settings" = "Settings";
+"Manage your account!"  = "Manage your account!";
+"ChoosePhoto" = "ChoosePhoto";
+"SaveButton" = "SaveButton";
+"Saved!" =  "Saved!";
+"СhangesSaved" = "Your changes have been saved";
+"Tryagain" = "Try again please!";
+/////////////////////////////////////////////Contact View////////////////////////
+"Email Support"  = "Email Support";
+/////////////////////////////////////////////FAQ View//////////////////////// not complete
+"Have any questions?" = "Have any questions?";
+/////////////////////////////////////////////Account View////////////////////////
+"Contacts" = "Contacts";
+"FAQ" = "Frequently Asked Questions";
+"RateUs" = "Rate Serene on the App Store!";
+"Sign Out" = "Sign Out";
+"Version" = "Version 1.00";
+"ContactsMsg" = "Whether you're curious about features, have suggestions for improving Serene or the answer you're looking for isn't in FAQ, contact us and let's have a talk!";
+/////////////////////////////////////////////Lightmode  Notifications  Languages////////////////////////
+"Remind me to journal" = "Remind me to journal";
+"Max once a day" = "Max once a day";
+"Notifications are disabled!" = "Notifications are disabled!";
+"Unfortunetly we can't remind to journal :(" = "Unfortunetly we can't remind to journal :(";
+"Open Settings" = "Open Settings";
+
+"Lite Mode" = "Lite Mode";
+"Better performance. Recommended for iPhone X and older." = "Better performance. Recommended for iPhone X and older.";
+
+"App language" = "App language";
+"ChooseLanguage" = "Choose interface language";
+
+//////////////////////////FAQ DATA/////////////////
+"What is journaling?" = "What is journaling?";
+"When you were a child, you might have kept a diary hidden under your mattress. It was a place to confess your struggles and fears without judgment or punishment. It likely felt good to get all of those thoughts and feelings out of your head and down on paper. The world seemed clearer. You may have stopped using a diary as you grow older. But the concept and its benefits still apply. Now it’s called journaling. It's simply writing down your thoughts and feelings to understand them more clearly. And if you struggle with stress, depression, or anxiety, keeping a journal can be a great idea. It can help you gain control of your emotions and improve your mental health." = "When you were a child, you might have kept a diary hidden under your mattress. It was a place to confess your struggles and fears without judgment or punishment. It likely felt good to get all of those thoughts and feelings out of your head and down on paper. The world seemed clearer. You may have stopped using a diary as you grow older. But the concept and its benefits still apply. Now it’s called journaling. It's simply writing down your thoughts and feelings to understand them more clearly. And if you struggle with stress, depression, or anxiety, keeping a journal can be a great idea. It can help you gain control of your emotions and improve your mental health.";
+
+"Why is journaling beneficial to mental health?" = "Why is journaling beneficial to mental health?";
+"One of the ways to deal with any overwhelming emotion is to find a healthy way to express yourself. This makes a journal a helpful tool in managing your mental health. Journaling can help you: Manage anxiety, Reduce stress, Cope with depression.  Journaling helps control your symptoms and improve your mood by: Helping you prioritize problems, fears, and concerns Tracking any symptoms day-to-day so that you can recognize triggers and learn ways to better control them, Providing an opportunity for positive self-talk and identifying negative thoughts and behaviors, When you have a problem and you're stressed, keeping a journal can help you identify what’s causing that stress or anxiety. Once you’ve identified your stressors, you can work on a plan to resolve the problems and reduce your stress. Keep in mind that journaling is just one aspect of a healthy lifestyle for better managing stress, anxiety, and mental health conditions. To get the most benefits, be sure you also:Relax and meditate each day ,Eat a healthy, balanced diet, Exercise regularly—get in some activity every day, Treat yourself to plenty of sleep each night, Stay away from alcohol and drugs, Use your journal to make sure you follow these guidelines daily." = "One of the ways to deal with any overwhelming emotion is to find a healthy way to express yourself. This makes a journal a helpful tool in managing your mental health. Journaling can help you: Manage anxiety, Reduce stress, Cope with depression.  Journaling helps control your symptoms and improve your mood by: Helping you prioritize problems, fears, and concerns Tracking any symptoms day-to-day so that you can recognize triggers and learn ways to better control them, Providing an opportunity for positive self-talk and identifying negative thoughts and behaviors, When you have a problem and you're stressed, keeping a journal can help you identify what’s causing that stress or anxiety. Once you’ve identified your stressors, you can work on a plan to resolve the problems and reduce your stress. Keep in mind that journaling is just one aspect of a healthy lifestyle for better managing stress, anxiety, and mental health conditions. To get the most benefits, be sure you also:Relax and meditate each day ,Eat a healthy, balanced diet, Exercise regularly—get in some activity every day, Treat yourself to plenty of sleep each night, Stay away from alcohol and drugs, Use your journal to make sure you follow these guidelines daily.";
+"How to journal?" = "How to journal?";
+"Try these tips to help you get started with journaling: Try to write every day. Set aside a few minutes every day to write. This will help you to write in your journal regularly.Make it easy. Keep a pen and paper handy at all times. Then when you want to write down your thoughts, you can. You can also keep a journal on your smartphone. Write or draw whatever feels right. Your journal doesn't need to follow any certain structure. It's your own private place to discuss and create whatever you want to express your feelings. Let the words and ideas flow freely. Don't worry about spelling mistakes or what other people might think. Use your journal as you see fit. You don't have to share your journal with anyone. If you do want to share some of your thoughts with trusted friends and loved ones, you could show them parts of your journal. Keeping a journal helps you create order when your world feels like it’s in chaos. You get to know yourself by revealing your most private fears, thoughts, and feelings. Look at your writing time as personal relaxation time. It's a time when you can de-stress and wind down. Write in a place that's relaxing and soothing, maybe with a cup of tea. Look forward to your journaling time. And know that you're doing something good for your mind and body." = "Try these tips to help you get started with journaling: Try to write every day. Set aside a few minutes every day to write. This will help you to write in your journal regularly.Make it easy. Keep a pen and paper handy at all times. Then when you want to write down your thoughts, you can. You can also keep a journal on your smartphone. Write or draw whatever feels right. Your journal doesn't need to follow any certain structure. It's your own private place to discuss and create whatever you want to express your feelings. Let the words and ideas flow freely. Don't worry about spelling mistakes or what other people might think. Use your journal as you see fit. You don't have to share your journal with anyone. If you do want to share some of your thoughts with trusted friends and loved ones, you could show them parts of your journal. Keeping a journal helps you create order when your world feels like it’s in chaos. You get to know yourself by revealing your most private fears, thoughts, and feelings. Look at your writing time as personal relaxation time. It's a time when you can de-stress and wind down. Write in a place that's relaxing and soothing, maybe with a cup of tea. Look forward to your journaling time. And know that you're doing something good for your mind and body.";
